@@ -10,7 +10,8 @@ char authSAS[] = "SharedAccessSignature sr=alexey.azure-devices.net%2fdevices%2f
 String deviceName = "myDevice";
 char ssid[] = "myhomenet";      // your network SSID (name)
 char pass[] = "password123";   // your network password
-String uri = "/devices/myDevice/messages/events?api-version=2016-02-03";
+String uri = "/devices/myDevice/messages/events?api-version=2016-02-03"; //API key for event hub
+// string uri =  /{MyDevice}/messages/devicebound?api-version=2016-02-03"; HTTP GET request
 
 int status = WL_IDLE_STATUS;
 WiFiSSLClient client;
